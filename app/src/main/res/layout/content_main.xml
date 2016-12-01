@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.musicplayer.MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/titletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="&#9835;Music Player &#9835;"
+        android:textSize="35sp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:layout_below="@+id/titletextview"
+        android:src="@drawable/images"
+        android:layout_gravity="center"/>
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/images"
+        android:layout_centerHorizontal="true"
+        android:text="Medium Text"
+        android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:text="Sub Heading"
+            android:textSize="35sp"
+            android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:text="Sub Heading"
+        android:textSize="35sp"
+        android:layout_gravity="center"/>
+
+
+
+
+    <Button
+            android:id="@+id/txtVw_playSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtVw_pauseSong"
+        android:layout_marginTop="8dp"
+            android:onClick = "playSong"
+            android:layout_alignParentBottom="true"
+        android:text="&#9658;"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick = "pauseSong"
+            android:id="@+id/txtVw_pauseSong"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="||"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick = "stopSong"
+                android:id="@+id/txtVw_stopSong"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/txtVw_pauseSong"
+                android:text="&#10074;"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick = "fastfowardSong"
+                android:text="&lt;"/>
+
+
+
+
+
+
+
+</RelativeLayout>
