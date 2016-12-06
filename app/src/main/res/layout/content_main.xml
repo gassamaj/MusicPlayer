@@ -5,6 +5,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.student.musicplayer.MainActivity">
 
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/txtVw_pauseSong"
+    android:id= "@+id/txtVw_endtime"
+   android:layout_toLeftOf="@+id/txtVw_pauseSong"
+    android:text=" 0  min , 0 sec"
+    android:textSize="25sp"
+    android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVw_playSong"
+        android:id="@+id/txtVw_viewbar"
+        android:layout_toRightOf="@+id/txtVw_playSong"
+        android:text=" 0  min , 0 sec"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
 
 
     <TextView
@@ -86,16 +106,29 @@
                 android:onClick = "stopSong"
                 android:id="@+id/txtVw_stopSong"
                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 android:layout_toLeftOf="@+id/txtVw_pauseSong"
                 android:text="&#10074;"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:onClick = "fastfowardSong"
+                android:onClick = "rewindSong"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/txtVw_stopSong"
+                android:layout_toStartOf="@+id/txtVw_stopSong"
                 android:text="&lt;"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick = "fastforwardSong"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/txtVw_playSong"
+        android:layout_toEndOf="@+id/txtVw_playSong"
+        android:text="&gt;"/>
 
 
 
