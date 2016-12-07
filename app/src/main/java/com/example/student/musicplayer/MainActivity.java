@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
    // private SeekBar mySongBarVar = new SeekBar();//
 
     private MediaPlayer song1;
@@ -58,7 +59,7 @@ public int  currentTimeMS;
         currentMinutes =(int) (currentTimeMS/1000/60);
 //        currentMinutes + currentTimeMS.song1.getCurrentPosition();
         currentSeconds = ((int)(currentTimeMS/1000)) %60;
-        endTimeViewVar.setText(currentMinutes+ " min, "+currentSeconds + " sec");
+        endTimeViewVar.setText(endMinutes+ " min, "+endSeconds + " sec");
         currentTimeViewVar.setText( currentMinutes+ " min, "+currentSeconds + " sec");
         myHandler.postDelayed(UpdateSongTime, 100);
 
@@ -67,10 +68,9 @@ public int  currentTimeMS;
 
     private Runnable UpdateSongTime = new Runnable() {
         public void run() {
-
             currentTimeMS = song1.getCurrentPosition();
-            currentMinutes =(int) (currentTimeMS/1000/60);
-            currentSeconds = ((int)(currentTimeMS/1000)) %60;
+           int currentMinutes =(int) (currentTimeMS/1000/60);
+            int currentSeconds = ((int)(currentTimeMS/1000)) %60;
             currentTimeViewVar.setText(currentMinutes+ " min, "+currentSeconds + " sec");
 
             myHandler.postDelayed(this, 100);
@@ -143,7 +143,7 @@ public int  currentTimeMS;
         }
 
         Context context = getApplicationContext();
-        CharSequence text = "fastforward";
+        CharSequence text = "fastfoward";
         int duration = Toast.LENGTH_SHORT;
         Toast myMessage= Toast.makeText(context, text, duration);
         myMessage.show();
