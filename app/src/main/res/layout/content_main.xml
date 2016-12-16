@@ -26,6 +26,15 @@
         android:textSize="25sp"
         android:layout_gravity="center"/>
 
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/txtVw_seekBar1"
+        android:layout_below="@+id/txtVw_endtime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:indeterminate="false" />
+
 
 
     <TextView
@@ -50,24 +59,25 @@
 
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/songTitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/images"
         android:layout_centerHorizontal="true"
         android:text="Medium Text"
+        android:textColor="#008000"
         android:textSize="36sp" />
 
-        <TextView
-            android:id="@+id/subheading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text"
-            android:layout_centerHorizontal="true"
-            android:text="Subheading"
-            android:textSize="35sp"
-            android:layout_gravity="center"/>
 
+    <TextView
+        android:id="@+id/songArtistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songTitleView"
+        android:layout_centerHorizontal="true"
+        android:text="Bottom  Text"
+        android:textSize="35sp"
+        android:layout_gravity="center"/>
 
 
 
@@ -77,7 +87,7 @@
         android:layout_height="wrap_content"
             android:layout_toRightOf="@id/txtVw_pauseSong"
         android:layout_marginTop="8dp"
-            android:onClick = "playSong"
+            android:onClick = "playSongClick"
             android:layout_alignParentBottom="true"
         android:text="&#9658;"/>
 
@@ -121,6 +131,7 @@
         android:layout_toRightOf="@+id/txtVw_playSong"
         android:layout_toEndOf="@+id/txtVw_playSong"
         android:text="&gt;"/>
+
 
 
 

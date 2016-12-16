@@ -47,7 +47,7 @@
         jar="C:\Users\Student\AndroidStudioProjects\MusicPlayer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="c578b670b3581b3d4da3b807a9f9c1a7b79f8397">
+        sha1="c41b8c4779941dbfb34f582fe3693c82254789f1">
         <dex dex="C:\Users\Student\AndroidStudioProjects\MusicPlayer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_043fcc2fe39efb0b8a48950dc38f6eb6867a617b\classes.dex" />
     </item>
     <item
@@ -68,7 +68,7 @@
         jar="C:\Users\Student\AndroidStudioProjects\MusicPlayer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="fa52e94221d31d3464af36d83e0f2eaf7110ca78">
+        sha1="858cdbad2d758d24391400b057936347707a9352">
         <dex dex="C:\Users\Student\AndroidStudioProjects\MusicPlayer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_075eb36dfdc6be8a5bd1f9e2a50f6ad89dc37c0c\classes.dex" />
     </item>
     <item
